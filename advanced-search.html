@@ -25,6 +25,14 @@
             color: #4285F4;
             font-size: 14px;
         }
+        .full-screen-container {
+            background-color: #ffffff;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .search-container {
             background-color: #ffffff;
             padding: 20px;
@@ -34,8 +42,18 @@
             max-width: 800px;
             text-align: left;
         }
-        .logo {
+        .logo-container {
+            display: flex;
+            align-items: center;
             margin-bottom: 20px;
+        }
+        .logo {
+            display: block;
+        }
+        .logo-text {
+            font-size: 24px;
+            color: #4285F4;
+            margin-left: 8px;
         }
         .instruction {
             font-weight: bold;
@@ -85,20 +103,21 @@
         <a href="index.html">Google Search</a>
         <a href="image_search.html">Image Search</a>
     </div>
-    <div class="search-container">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="logo">
-        
-        <div class="instruction">Advanced Search</div>
-        
-        <form action="https://www.google.com/search" method="get">
-            <input type="text" name="as_q" class="input-field" placeholder="Find pages with all these words" autofocus>
-            <input type="text" name="as_epq" class="input-field" placeholder="Find pages with this exact word or phrase">
-            <input type="text" name="as_oq" class="input-field" placeholder="Find pages with any of these words">
-            <input type="text" name="as_eq" class="input-field" placeholder="Find pages with none of these words">
-        
-            
-            <input type="submit" value="Advanced Search" class="search-button">
-        </form>
+    <div class="full-screen-container">
+        <div class="search-container">
+            <div class="logo-container">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="logo">
+                <span class="logo-text">Images</span>
+            </div>
+            <div class="instruction">Advanced Search</div>
+            <form action="https://www.google.com/search" method="get">
+                <input type="text" name="as_q" class="input-field" placeholder="Find pages with all these words" autofocus>
+                <input type="text" name="as_epq" class="input-field" placeholder="Find pages with this exact word or phrase">
+                <input type="text" name="as_oq" class="input-field" placeholder="Find pages with any of these words">
+                <input type="text" name="as_eq" class="input-field" placeholder="Find pages with none of these words">
+                <input type="submit" value="Advanced Search" class="search-button">
+            </form>
+        </div>
     </div>
 </body>
 </html>
