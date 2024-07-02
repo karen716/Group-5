@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Advanced Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        .top-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .top-right a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #4285F4;
+            font-size: 14px;
+        }
+        .search-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            text-align: left;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .instruction {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .input-field {
+            width: calc(100% - 30px);
+            padding: 10px 15px;
+            border: 1px solid #dfe1e5;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        .input-field:focus {
+            border-color: #4d90fe;
+            box-shadow: 0 0 0 1px #4d90fe;
+        }
+        .dropdown-field {
+            width: calc(100% - 50px);
+            padding: 10px 15px;
+            border: 1px solid #dfe1e5;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            outline: none;
+        }
+        .search-button {
+            background-color: #4285F4;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .search-button:hover {
+            background-color: #3367d6;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-right">
+        <a href="index.html">Google Search</a>
+        <a href="image_search.html">Image Search</a>
+    </div>
+    <div class="search-container">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="logo">
+        
+        <div class="instruction">Advanced Search</div>
+        
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="as_q" class="input-field" placeholder="Find pages with all these words" autofocus>
+            <input type="text" name="as_epq" class="input-field" placeholder="Find pages with this exact word or phrase">
+            <input type="text" name="as_oq" class="input-field" placeholder="Find pages with any of these words">
+            <input type="text" name="as_eq" class="input-field" placeholder="Find pages with none of these words">
+        
+            
+            <input type="submit" value="Advanced Search" class="search-button">
+        </form>
+    </div>
+</body>
+</html>
