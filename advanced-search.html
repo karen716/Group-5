@@ -11,13 +11,77 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            background-color: #f2f2f2;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 92px;
+            height: auto;
+        }
+        .title {
+            position: absolute;
+            top: 70px; 
+            left: 50px; 
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+        }
+        .title-line {
+            position: absolute;
+            top: 110px; 
+            left: 10px;
+            width: calc(100% - 20px);
+            border: none;
+            border-top: 2px solid #ddd; 
+        }
+        .subtitle {
+            position: absolute;
+            top: 130px; 
+            left: 50px;
+            width: calc(100% - 60px); 
+            font-size: 16px;
+            color: #000;
+        }
+        .otByu {
+            margin-top: 5px;
+        }
+        .yIQOUb {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .FAcADc {
+            width: 200px;
+            margin-right: 5px;
+        }
+        .lOTAE {
+            font-size: 14px;
+            color: #000;
+        }
+        .jYcx0e {
+            margin-left: 20px;
+        }
+        .PLLUQc {
+            width: 420px; 
+        }
+        .cwqNnb {
+            width: 790px;
+        }
+        .dulCv {
+            font-size: 14px;
+            color: #bdc1c6;
+        }
+        .BFlQMb {
+            font-weight: bold;
+            color: #000;
         }
         .top-right {
             position: absolute;
             top: 10px;
             right: 10px;
+            display: flex;
+            align-items: center;
         }
         .top-right a {
             margin-left: 10px;
@@ -25,80 +89,137 @@
             color: #4285F4;
             font-size: 14px;
         }
-        .search-container {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 800px;
-            text-align: left;
-        }
-        .logo {
-            margin-bottom: 20px;
-        }
-        .instruction {
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .input-field {
-            width: calc(100% - 30px);
-            padding: 10px 15px;
-            border: 1px solid #dfe1e5;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            font-size: 14px;
-            outline: none;
-            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-        }
-        .input-field:focus {
-            border-color: #4d90fe;
-            box-shadow: 0 0 0 1px #4d90fe;
-        }
-        .dropdown-field {
-            width: calc(100% - 50px);
-            padding: 10px 15px;
-            border: 1px solid #dfe1e5;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            font-size: 14px;
-            outline: none;
+        .top-right a:hover {
+            text-decoration: underline;
         }
         .search-button {
-            background-color: #4285F4;
-            color: #ffffff;
-            border: none;
+            margin: 20px auto;
+            display: block;
             padding: 10px 20px;
-            margin-top: 20px;
-            border-radius: 5px;
+            font-size: 16px;
+            background-color: #4285F4;
+            color: #fff;
+            border: none;
             cursor: pointer;
-            font-size: 14px;
-            transition: background-color 0.3s, color 0.3s;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
         }
         .search-button:hover {
-            background-color: #3367d6;
+            background-color: #357AE8;
+        }
+        .jfk-textinput{
+            width: 400px;
         }
     </style>
 </head>
 <body>
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="logo">
+    <div class="title">Advanced Search</div>
+    <hr class="title-line">
+    <div class="subtitle">Find pages with...</div>
+    <div class="otByu">
+        <div class="yIQOUb">
+            <div class="FAcADc">
+                <div class="lOTAE">
+                    <label for="xX4UFf">all these words:</label>
+                </div>
+            </div>
+            <div class="jYcx0e">
+                <div class="PLLUQc">
+                    <input class="jfk-textinput" id="xX4UFf" name="as_q" type="text">
+                </div>
+            </div>
+            <div class="cwqNnb dulCv">
+                <div class="lOTAE">
+                    Type the important words: <span class="BFlQMb">tricolor rat terrier</span>
+                </div>
+            </div>
+        </div>
+        <div class="yIQOUb">
+            <div class="FAcADc">
+                <div class="lOTAE">
+                    <label for="CwYCWc">this exact word or phrase:</label>
+                </div>
+            </div>
+            <div class="jYcx0e">
+                <div class="PLLUQc">
+                    <input class="jfk-textinput" id="CwYCWc" name="as_epq" type="text">
+                </div>
+            </div>
+            <div class="cwqNnb dulCv">
+                <div class="lOTAE">
+                    Put exact words in quotes: <span class="BFlQMb">"rat terrier"</span>
+                </div>
+            </div>
+        </div>
+        <div class="yIQOUb">
+            <div class="FAcADc">
+                <div class="lOTAE">
+                    <label for="mSoczb">any of these words:</label>
+                </div>
+            </div>
+            <div class="jYcx0e">
+                <div class="PLLUQc">
+                    <input class="jfk-textinput" id="mSoczb" name="as_oq" type="text">
+                </div>
+            </div>
+            <div class="cwqNnb dulCv">
+                <div class="lOTAE">
+                    Type <span class="BFlQMb">OR</span> between all the words you want: <span class="BFlQMb">miniature OR standard</span>
+                </div>
+            </div>
+        </div>
+        <div class="yIQOUb">
+            <div class="FAcADc">
+                <div class="lOTAE">
+                    <label for="t2dX1c">none of these words:</label>
+                </div>
+            </div>
+            <div class="jYcx0e">
+                <div class="PLLUQc">
+                    <input class="jfk-textinput" id="t2dX1c" name="as_eq" type="text">
+                </div>
+            </div>
+            <div class="cwqNnb dulCv">
+                <div class="lOTAE">
+                    Put a minus sign just before words you don't want: <span class="BFlQMb">-rodent, -"Jack Russell"</span>
+                </div>
+            </div>
+        </div>
+        <div class="yIQOUb">
+            <div class="FAcADc">
+                <div class="lOTAE">
+                    <label for="LK5akc">numbers ranging from:</label>
+                </div>
+            </div>
+            <div class="jYcx0e" style="position:relative">
+                <div style="display:table;width:100%">
+                    <div style="display:table-cell;padding-right:16px">
+                        <input class="textinput" id="LK5akc" name="as_nlo" type="text">
+                    </div>
+                    <div style="display:table-cell;width:40px;padding-right:6px;padding-left:6px;text-align:center;font-size:13px;color:#bdc1c6">
+                        to
+                    </div>
+                    <div style="display:table-cell;padding-right:16px">
+                        <input class="textinput" name="as_nhi" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="cwqNnb dulCv">
+                <div class="lOTAE">
+                    Put 2 periods between the numbers and add a unit of measure: <span class="BFlQMb">10..35 lb, $300..$500, 2010..2011</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 100%;">
+    <form action="#">
+        <input type="submit" value="Advanced Search" class="search-button">
+    </form>
     <div class="top-right">
         <a href="index.html">Google Search</a>
         <a href="image_search.html">Image Search</a>
-    </div>
-    <div class="search-container">
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="logo">
-        
-        <div class="instruction">Advanced Search</div>
-        
-        <form action="https://www.google.com/search" method="get">
-            <input type="text" name="as_q" class="input-field" placeholder="Find pages with all these words" autofocus>
-            <input type="text" name="as_epq" class="input-field" placeholder="Find pages with this exact word or phrase">
-            <input type="text" name="as_oq" class="input-field" placeholder="Find pages with any of these words">
-            <input type="text" name="as_eq" class="input-field" placeholder="Find pages with none of these words">
-        
-            
-            <input type="submit" value="Advanced Search" class="search-button">
-        </form>
     </div>
 </body>
 </html>
