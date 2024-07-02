@@ -13,7 +13,6 @@
             height: 100vh;
             margin: 0;
             background-color: #f2f2f2;
-            overflow-y: scroll;
         }
         .top-right {
             position: absolute;
@@ -34,8 +33,6 @@
             width: 100%;
             max-width: 800px;
             text-align: left;
-            margin-top: 30px; 
-            position: relative; 
         }
         .logo {
             margin-bottom: 20px;
@@ -43,7 +40,6 @@
         .instruction {
             font-weight: bold;
             margin-bottom: 10px;
-            margin-top: 10px; 
         }
         .input-field {
             width: calc(100% - 30px);
@@ -82,29 +78,15 @@
         .search-button:hover {
             background-color: #3367d6;
         }
-        .header-title {
-            font-size: 28px;
-            font-weight: bold;
-            color: #4285F4;
-            margin-bottom: 10px; 
-            text-align: center; 
-        }
-        .header-container {
-            margin-bottom: 20px; 
-        }
     </style>
 </head>
 <body>
-
     <div class="top-right">
         <a href="index.html">Google Search</a>
         <a href="image_search.html">Image Search</a>
     </div>
     <div class="search-container">
-        <div class="header-container">
-            <div class="header-title">Google</div>
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="logo">
-        </div>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="logo">
         
         <div class="instruction">Advanced Search</div>
         
@@ -113,53 +95,10 @@
             <input type="text" name="as_epq" class="input-field" placeholder="Find pages with this exact word or phrase">
             <input type="text" name="as_oq" class="input-field" placeholder="Find pages with any of these words">
             <input type="text" name="as_eq" class="input-field" placeholder="Find pages with none of these words">
-            
-            <div class="instruction">Then narrow your results by...</div>
-            
-            <select name="lr" class="dropdown-field">
-                <option value="">any language</option>
-                <option value="lang_en">English</option>
-                <option value="lang_fr">French</option>
-                <option value="lang_de">German</option>
-            </select>
-            
-            <select name="cr" class="dropdown-field">
-                <option value="">any region</option>
-                <option value="countryUS">United States</option>
-                <option value="countryPH">Philippines</option>
-                <option value="countryGB">United Kingdom</option>
-            </select>
-            
-            <select name="as_qdr" class="dropdown-field">
-                <option value="">anytime</option>
-                <option value="d">Past day</option>
-                <option value="w">Past week</option>
-                <option value="m">Past month</option>
-                <option value="y">Past year</option>
-            </select>
-            
-            <input type="text" name="tbs" class="input-field" placeholder="Date, usage rights, numeric range, and more">
-            
-            <div class="instruction">Sorted by relevance</div>
-            
-            <select name="sort" class="dropdown-field">
-                <option value="">Sort by relevance</option>
-                <option value="date">Sort by date</option>
-            </select>
-            
-            <input type="text" name="num" class="input-field" placeholder="Number of results per page">
-            
-            <input type="text" name="as_filetype" class="input-field" placeholder="File type">
-            
-            <input type="text" name="as_sitesearch" class="input-field" placeholder="Search within a site or domain">
-            
-            <input type="text" name="safe" class="input-field" placeholder="SafeSearch">
-            
-            <input type="text" name="as_rights" class="input-field" placeholder="Usage rights">
+        
             
             <input type="submit" value="Advanced Search" class="search-button">
         </form>
-        
     </div>
 </body>
 </html>
