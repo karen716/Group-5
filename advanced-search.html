@@ -41,7 +41,7 @@
             top: 130px; 
             left: 50px;
             width: calc(100% - 60px); 
-            font-size: 16px;
+            font-size: 22px;
             color: #000;
         }
         .otByu {
@@ -56,7 +56,7 @@
             margin-right: 5px;
         }
         .lOTAE {
-            font-size: 14px;
+            font-size: 20px;
             color: #000;
         }
         .jYcx0e {
@@ -95,7 +95,7 @@
         .search-button {
             margin: 20px auto;
             display: block;
-            padding: 10px 20px;
+            padding: 10px 10px;
             font-size: 16px;
             background-color: #4285F4;
             color: #fff;
@@ -109,6 +109,27 @@
             background-color: #357AE8;
         }
         .jfk-textinput{
+            width: 400px;
+        }
+        .narrow-results {
+            position: absolute;
+            top: 430px; 
+            left: 50px;
+            font-size: 22px;
+            color: #000;
+        }
+        .language-picker {
+            position: absolute;
+            top: 470px;
+            left: 35px;
+            font-size: 20px;
+            color: #000;
+            display: flex;
+        }
+        .language-picker select {
+            margin-left: 135px;
+            font-size: 16px;
+            padding: 4px;
             width: 400px;
         }
     </style>
@@ -214,7 +235,14 @@
         </div>
     </div>
     <hr style="width: 100%;">
+    <div class="narrow-results">Then narrow your results by...</div>
     <form action="#">
+        <div class="language-picker">
+            <label for="language">language:</label>
+            <select id="language" name="language">
+                <option value="any">any language</option>
+            </select>
+        </div>
         <input type="submit" value="Advanced Search" class="search-button">
     </form>
     <div class="top-right">
